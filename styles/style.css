@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans;
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+}
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    color: hsl(225, 10%, 92%);
+}
+.attribution a {
+    font-size: 0.6875rem;
+    color: hsl(228, 45%, 44%);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background:
+        url(../images/bg-pattern-top.svg) calc(0% - 25vw) calc(100% - 25vh) / 75vw 75vw
+            no-repeat,
+        url(../images/bg-pattern-bottom.svg) calc(100% + 25vw) calc(0% + 25vh) / 75vw 75vw
+            no-repeat,
+        hsl(185, 75%, 39%);
+}
+.wrapper {
+    margin: auto;
+    width: 19em;
+    background:
+        url(../images/bg-pattern-card.svg) no-repeat,
+        hsl(225, 10%, 92%);
+    padding: 90px 0 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile img {
+    border-radius: 50%;
+    border: 5px solid hsl(225, 10%, 92%);
+}
+.profile {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-info {
+    display: flex;
+    gap: 7px;
+}
+.name {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.age {
+    font-weight: 500;
+}
+.city {
+    font-size: 15px;
+}
+.line {
+    width: 100%;
+    background: hsla(227, 10%, 46%, 0.21);
+    margin: 20px 0;
+    height: 0.1px;
+}
+.grid {
+    display: grid;
+    width: 80%;
+    grid-template: 1fr / repeat(3, 1fr);
+}
+.grid-elem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    font-size: 15px;
+}
+.number {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);;
+}
+@media (max-width: 1024px) {
+    body {
+    background:
+        url(../images/bg-pattern-top.svg) calc(0% - 70vw) calc(100% - 70vh) / 150vw 150vw
+            no-repeat,
+        url(../images/bg-pattern-bottom.svg) calc(100% + 70vw) calc(0% + 75vh) / 150vw 150vw
+            no-repeat,
+        hsl(185, 75%, 39%);
+}
+}
